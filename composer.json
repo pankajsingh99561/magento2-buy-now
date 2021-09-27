@@ -1,0 +1,23 @@
+{
+    "name": "satrix/module-buynow",
+    "description": "Buy Now Extension for Magento 2",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Satrix",
+            "email": "info@satrixtech.com"
+        }
+    ],
+	"require": {
+        "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0"
+    },    
+	"autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Satrix\\BuyNow\\": ""
+        }
+    }
+}
