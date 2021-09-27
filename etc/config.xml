@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <buynow>
+            <general>
+                <enable_buynow>0</enable_buynow> 
+            </general>
+            <advance>
+                <button_title>Buy Now</button_title>
+                <hide_add_to_cart>1</hide_add_to_cart>
+                <enable_category>1</enable_category>
+                <enable_product>1</enable_product>
+                <enable_search>1</enable_search>
+                <enable_related>1</enable_related>
+                <enable_upsell>1</enable_upsell>
+                <enable_crosssell>1</enable_crosssell>
+                <enable_wishlist>1</enable_wishlist>
+                <enable_comparelist>1</enable_comparelist>
+                <keep_cart_products>1</keep_cart_products>
+            </advance>
+        </buynow>
+    </default>
+</config>

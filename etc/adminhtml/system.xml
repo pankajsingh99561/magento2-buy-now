@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="satrix" translate="label" sortOrder="600">
+            <label>Satrix Extensions</label>
+        </tab>
+        <section id="buynow" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Buy Now</label>
+            <tab>satrix</tab>
+            <resource>Satrix_BuyNow::config_buynow</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enable_buynow" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Buy Now Button</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="advance" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Advanced Configuration</label>
+                <depends>
+                    <field id="buynow/general/enable_buynow">1</field>
+                </depends>
+                 <field id="button_title" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Button Title</label>
+                    <comment>This Title will be displayed in store front as Button Label.</comment>
+                     <depends>
+                         <field id="buynow/general/enable_buynow">1</field>
+                     </depends>
+                </field>
+                <field id="hide_add_to_cart" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hide Add to Cart Button</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="enable_category" translate="label" type="select" sortOrder="3"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show on Catalog Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="enable_product" translate="label" type="select" sortOrder="4"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show on Product Detail Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="enable_search" translate="label" type="select" sortOrder="5"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show on Search Result Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="enable_related" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show on Related Products List</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="enable_upsell" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show on Up-Sell Products List</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="enable_crosssell" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show on Cross-Sell Products List</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="enable_wishlist" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show on Wish List Page</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="enable_comparelist" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show on Compare Products Page List</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+                <field id="keep_cart_products" translate="label" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Keep Products in Cart</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>On choosing 'No', all existing products in the cart will be removed.</comment>
+                    <depends>
+                        <field id="buynow/general/enable_buynow">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+
