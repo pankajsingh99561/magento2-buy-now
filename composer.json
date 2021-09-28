@@ -2,11 +2,26 @@
     "name": "satrix/module-buynow",
     "description": "Buy Now Extension for Magento 2",
     "type": "magento2-module",
-    "version": "1.0.1",
+    "version": "2.2.0",
     "license": "OSL-3.0",
     "require": {
         "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0"
     },
+	"authors": [
+        {
+            "name": "Satrix",
+            "email": "info@satrixtech.com"
+        }
+    ],
+	"minimum-stability": "dev",
+	"keywords": [
+		"magento 2",
+		"magento 2 buynow",
+		"magento buynow",
+		"mageplaza",
+		"buynow",
+		"buynow button",
+	],
     "autoload": {
         "files": [
             "registration.php"
