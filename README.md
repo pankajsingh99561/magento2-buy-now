@@ -6,4 +6,4 @@ step -1 Add the module to the app/code of your magento 2.
 step -2 Please run setup:upgrade CLI cmd in order to register this module in the project. 
 
 This should do the trick, Thank you,
-Happy coding!!
+Happy coding!! 
